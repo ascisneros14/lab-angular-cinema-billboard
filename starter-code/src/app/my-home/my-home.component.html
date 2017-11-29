@@ -1,0 +1,6 @@
+<div class="movies" *ngFor= "let e of listMovies">
+  <h4>Room {{e.room}}</h4>
+  <img src="{{e.poster}}" alt="">
+  <h2>{{e.title}}</h2>
+  <button [routerLink] = "['..','movie', e.id]" type="button" name="button">Show details</button>
+</div>
